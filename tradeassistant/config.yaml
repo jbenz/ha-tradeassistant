@@ -2,9 +2,9 @@ name: TradeAssistant
 description: Professional cryptocurrency trading and market monitoring dashboard
 version: 1.0.0
 slug: tradeassistant
-url: https://github.com/madrot/ha-tradeassistant
+url: https://github.com/jbenz/ha-tradeassistant
 codeowners:
-- '@madrot'
+- '@jbenz'
 init: false
 arch:
 - aarch64
