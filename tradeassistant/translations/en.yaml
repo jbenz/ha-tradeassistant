@@ -1,0 +1,5 @@
+configuration:
+  coinbase_api_key:
+    name: Coinbase API Key
+  coinbase_secret:
+    name: Coinbase API Secret

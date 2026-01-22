@@ -1,0 +1,56 @@
+name: TradeAssistant
+description: Professional cryptocurrency trading and market monitoring dashboard
+version: 1.0.0
+slug: tradeassistant
+url: https://github.com/madrot/ha-tradeassistant
+codeowners:
+- '@madrot'
+init: false
+arch:
+- aarch64
+- amd64
+- armhf
+- armv7
+- i386
+ports:
+  8898/tcp: 8898
+ports_description:
+  8898/tcp: TradeAssistant API and WebSocket server
+environment:
+  LOG_LEVEL: info
+options:
+  coinbase_api_key: ''
+  coinbase_secret: ''
+  coinbase_passphrase: ''
+  update_interval: 5
+  max_feed_items: 200
+  enable_persistence: true
+schema:
+  coinbase_api_key:
+    description: Coinbase API Key
+    type: string
+  coinbase_secret:
+    description: Coinbase API Secret
+    type: string
+  coinbase_passphrase:
+    description: Coinbase API Passphrase
+    type: string
+  update_interval:
+    description: Update interval (seconds)
+    type: integer
+    default: 5
+  max_feed_items:
+    description: Max feed items
+    type: integer
+    default: 200
+  enable_persistence:
+    description: Enable persistence
+    type: boolean
+    default: true
+services:
+- http
+- websocket
+hassio_api: false
+host_network: false
+startup: services
+boot: auto

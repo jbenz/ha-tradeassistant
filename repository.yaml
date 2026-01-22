@@ -1,0 +1,6 @@
+name: TradeAssistant Add-on Repository
+description: >
+  Professional cryptocurrency trading and market monitoring dashboard
+  for Home Assistant with real-time WebSocket feeds and portfolio tracking.
+url: 'https://github.com/madrot/ha-tradeassistant'
+maintainer: madrot <admin@example.com>
